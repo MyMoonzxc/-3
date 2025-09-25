@@ -1,0 +1,24 @@
+#include<locale.h>
+#include<stdio.h>
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	int num1,num2;
+	puts("Введите число");
+	scanf("%d", &num1);
+	printf("\nВведено число %d", num1);
+
+	puts("\nВведите число");
+	scanf("%d", &num2);
+	printf("Введено число %d", num2);
+
+	printf("\nСумма: %d+%d=%d\n", num1, num2, num1 + num2);
+	printf("\nРазность: %d-%d=%d\n", num1, num2, num1 - num2);
+	printf("\nПроизведение: %d*%d=%d\n", num1, num2, num1 * num2);
+	printf("\nРазность: %d/%d=%d\n", num2, num, num2 / num1);
+	printf("\nостаток от деления: %d на %d=%d\n", num2, num1, num2 % num1);
+
+	
+
+
+}
