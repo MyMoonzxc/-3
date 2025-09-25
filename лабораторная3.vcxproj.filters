@@ -1,17 +1,12 @@
-#include <stdio.h>
-#include <locale.h>
-
-int main() {
-    setlocale("LC_CTYPE,"RUS");
-    int years;
-    
-    printf("Сколько вам лет? ");
-    scanf("%d", &years);
-    
-    int days = years * 365;
-    
-    printf("Вы прожили примерно %d дней!\n", days);
-    printf("Это около %d недель\n", days / 7);
-    
-    return 0;
+#include<stdio.h>
+#include<locale.h>
+int main()
+{
+	setlocale(LC_CTYPE, "RUS");
+	int years;
+	printf("Сколько вам лет?\n");
+	scanf("%d", &years);
+	int day = years * 365;
+	printf("Вы прожили примерно %d дней\n", day);
+	printf("Это %d недель\n", day / 7);
 }
